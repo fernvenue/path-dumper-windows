@@ -23,7 +23,6 @@ echo Copying files...
 copy main.py build\
 xcopy /E /I locales build\locales
 copy README*.md build\
-copy requirements.txt build\
 
 python -c "import PyInstaller" >nul 2>&1
 if %errorlevel% equ 0 (
